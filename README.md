@@ -16,7 +16,7 @@ A basic Ethereum smart contract for a social media application where users can w
 
 ### Frontend Setup
 1. Create an `index.html` file for the frontend layout.
-2. Create a `style.css` file for basic styling.
+2. Create a `styles.css` file for basic styling.
 3. Create a `script.js` file for interaction with the deployed smart contract using your contract ABI and address.
 
 ## Usage
@@ -30,7 +30,7 @@ A basic Ethereum smart contract for a social media application where users can w
 
 Here is an example of how to interact with the smart contract in `script.js`:
 
-```javascriptjavascript
+```javascript
 // Function to connect to the wallet
 async function connectWallet() {
     if (window.ethereum) {
@@ -58,13 +58,10 @@ async function connectWallet() {
 
 // Add event listener to connect wallet button
 document.getElementById('connectWalletButton').addEventListener('click', connectWallet);
-// Add event listener to connect wallet button 
+```
+##License
+This project is licensed under the MIT License.
 
-
-
-
-### License
-This project is licensed under the MIT License .
-
-## Author
+##Author
 Sakshi Vishwakarma
+
