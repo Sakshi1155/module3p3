@@ -58,7 +58,7 @@ async function connectWallet() {
 
 // Add event listener to connect wallet button
 document.getElementById('connectWalletButton').addEventListener('click', connectWallet);
-// Add event listener to connect wallet button ```
+// Add event listener to connect wallet button 
 
 
 
