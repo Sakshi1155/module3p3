@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My DApp</title>
+    <!-- Include ethers.js from a CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.0/dist/ethers.umd.min.js"></script>
+    <!-- Include the CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to My DApp</h1>
+        </header>
+        <main>
+            <button id="connectWalletButton" class="btn">Connect Wallet</button>
+            <section class="form-section">
+                <h2>Create Profile</h2>
+                <form id="profileForm" class="form">
+                    <input type="text" id="profileName" placeholder="Name" required class="input" />
+                    <input type="text" id="profileBio" placeholder="Bio" required class="input" />
+                    <button type="submit" class="btn">Create Profile</button>
+                </form>
+            </section>
+            <section class="form-section">
+                <h2>Create Post</h2>
+                <form id="postForm" class="form">
+                    <textarea id="postContent" placeholder="Post content" required class="textarea"></textarea>
+                    <button type="submit" class="btn">Create Post</button>
+                </form>
+            </section>
+            <ul id="postList" class="post-list"></ul>
+        </main>
+    </div>
+    <!-- Include your script.js file -->
+    <script src="script.js"></script>
+</body>
+</html>
