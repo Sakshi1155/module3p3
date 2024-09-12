@@ -29,4 +29,10 @@ contract SocialMedia {
     function getPosts() public view returns (Post[] memory) {
         return posts;
     }
+
+    // Function to retrieve a profile by address
+    function getProfile(address user) public view returns (string memory name, string memory bio) {
+        Profile memory profile = profiles[user];
+        return (profile.name, profile.bio);
+    }
 }
