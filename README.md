@@ -63,7 +63,7 @@ document.getElementById('connectWalletButton').addEventListener('click', connect
 
 
 
-## License
+### License
 This project is licensed under the MIT License .
 
 ## Author
