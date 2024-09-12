@@ -59,9 +59,9 @@ async function connectWallet() {
 // Add event listener to connect wallet button
 document.getElementById('connectWalletButton').addEventListener('click', connectWallet);
 ```
-##License
+## License
 This project is licensed under the MIT License.
 
-##Author
+## Author
 Sakshi Vishwakarma
 
