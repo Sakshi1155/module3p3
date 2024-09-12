@@ -30,5 +30,41 @@ A basic Ethereum smart contract for a social media application where users can w
 
 Here is an example of how to interact with the smart contract in `script.js`:
 
+```javascriptjavascript
+// Function to connect to the wallet
+async function connectWallet() {
+    if (window.ethereum) {
+        try {
+            // Request account access if needed
+            const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+            console.log(`Connected account: ${accounts[0]}`);
+
+            // Initialize ethers provider and signer
+            provider = new ethers.providers.Web3Provider(window.ethereum);
+            signer = provider.getSigner();
+
+            // Create a connection to the smart contract
+            contract = new ethers.Contract(contractAddress, contractABI, signer);
+
+            alert('Wallet connected');
+        } catch (error) {
+            console.error('Failed to connect wallet:', error);
+            alert('Failed to connect wallet. Check the console for more details.');
+        }
+    } else {
+        alert('No Ethereum browser extension detected, install MetaMask on desktop or visit from a dApp browser on mobile.');
+    }
+}
+
+// Add event listener to connect wallet button
+document.getElementById('connectWalletButton').addEventListener('click', connectWallet);
+// Add event listener to connect wallet button ```
+
+
+
+
+## License
+This project is licensed under the MIT License .
+
 ## Author
 Sakshi Vishwakarma
